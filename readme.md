@@ -1,3 +1,5 @@
 ## This is a test
 Git is a version control system.
-projext by alun2kb.
+The project just for learning git.
+---
+project by alun2kb.
