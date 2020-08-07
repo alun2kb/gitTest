@@ -79,8 +79,18 @@
 
 > 注意：标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。
 
+- 标签删除：git tag -d <tag-name>
+> 创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。
+
+- 标签推送向远程：git push origin <tagname>
+  
+- 一次性推送全部尚未推送到远程的本地标签：git push origin --tags
+
+- 删除远程标签，要先删除本地的，然后：git push origin :refs/tags/<tagname>
+
 ## command 操作命令 or vim 命令
-删除命令：rm
-使用vim打开文件：vi file
-显示文件内容：cat file
-展示目录下内容：ls / dir
+
+- 删除命令：rm
+- 使用vim打开文件：vi file
+- 显示文件内容：cat file
+- 展示目录下内容：ls / dir
